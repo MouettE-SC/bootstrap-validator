@@ -1,5 +1,5 @@
 /*!
- * Validator v0.11.9 for Bootstrap 3, by @1000hz
+ * Validator v0.11.9-custom for Bootstrap 3, by @1000hz
  * Copyright 2017 Cina Saffary
  * Licensed under http://opensource.org/licenses/MIT
  *
@@ -50,7 +50,7 @@
     this.$element.attr('novalidate', true) // disable automatic native validation
   }
 
-  Validator.VERSION = '0.11.9'
+  Validator.VERSION = '0.11.9-custom'
 
   Validator.INPUT_SELECTOR = ':input:not([type="hidden"], [type="submit"], [type="reset"], button)'
 

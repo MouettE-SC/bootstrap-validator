@@ -1,5 +1,8 @@
 Changelog
 =========
+### 0.11.9-custom
+* Added ready.bs.validator event
+
 ### 0.11.9
 * Fixing another issue with `<select multiple/>` elements. (#463)
 * No longer skipping a custom validator if its attribute has a falsy value. (#475)
