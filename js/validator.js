@@ -310,7 +310,13 @@
 
   Validator.prototype.toggleSubmit = function () {
     if (!this.options.disable) return
-    this.$btn.toggleClass('disabled', this.isIncomplete() || this.hasErrors())
+    if (this.isIncomplete() || this.hasErrors()) {
+        this.$btn.toggleClass('disabled', true)
+    } else {
+        this.$btn.toggleClass('disabled', false)
+        var e = $.Event('ready.bs.validator')
+        this.$element.trigger(e)
+    }
   }
 
   Validator.prototype.defer = function ($el, callback) {
